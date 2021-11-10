@@ -8,7 +8,7 @@ EXPOSE 80
 
 COPY tangd.xinetd /etc/xinetd.d/tangd
 COPY entrypoint.sh /usr/local/bin/
-RUN chmod +x //usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
